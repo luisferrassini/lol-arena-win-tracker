@@ -8,7 +8,7 @@ import {
   GAME_CONFIG, 
   UI_CONFIG,
   ERROR_MESSAGES 
-} from '../shared/constants.js'
+} from './shared/constants.js'
 
 import { 
   calculateProgress,
@@ -19,16 +19,16 @@ import {
   checkMilestone,
   setMilestoneFlag,
   debounce
-} from '../shared/utils.js'
+} from './shared/utils.js'
 
 import { 
   loadLatestVersion as loadLatestVersionFromAPI,
   loadChampions,
   getChampionImageUrl as getChampionImageUrlFromAPI
-} from '../shared/api.js'
+} from './shared/api.js'
 
-import { StorageManager } from '../shared/storage.js'
-import { ProgressCalculator } from '../shared/progress.js'
+import { StorageManager } from './shared/storage.js'
+import { ProgressCalculator } from './shared/progress.js'
 
 // State
 let champions = []; // normalized array
